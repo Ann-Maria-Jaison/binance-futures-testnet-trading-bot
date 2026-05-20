@@ -14,7 +14,6 @@
 [![Code Style](https://img.shields.io/badge/code%20style-pep8-green)](https://www.python.org/dev/peps/pep-0008/)
 [![Logging](https://img.shields.io/badge/logging-structured-005571)](https://docs.python.org/3/library/logging.html)
 [![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](https://github.com/your-repo/pulls)
 
 **`pip install -r requirements.txt` | `python cli.py --help` | `⚡ 0xDEADBEEF`**
 
@@ -300,15 +299,6 @@ logger = setup_logging(console_level=logging.INFO, file_level=logging.DEBUG)
 
 ---
 
-##  Contributing
-
-Found a bug? Want to add `TRAILING_STOP_MARKET`? Open an issue or PR.  
-**Please ensure**:
-- All validators remain pure
-- Logging covers new error paths
-- Update this README if CLI flags change
-
----
 
 ##  License
 
