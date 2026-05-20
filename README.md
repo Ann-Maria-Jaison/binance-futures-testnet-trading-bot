@@ -7,7 +7,7 @@
 
 <div align="center">
 
-# 🚀 Binance Futures Testnet Trading Bot
+#  Binance Futures Testnet Trading Bot
 
 [![Python Version](https://img.shields.io/badge/python-3.8%20%7C%203.9%20%7C%203.10%20%7C%203.11%20%7C%203.12-blue?logo=python&logoColor=white)](https://python.org)
 [![Binance API](https://img.shields.io/badge/Binance-Futures%20Testnet-f0b90b?logo=binance&logoColor=white)](https://testnet.binancefuture.com)
@@ -24,7 +24,7 @@
 
 ---
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [Overview](#-overview)
 - [Key Features](#-key-features)
@@ -41,7 +41,7 @@
 
 ---
 
-## 🔍 Overview
+##  Overview
 
 This is not just another trading script. It's a **battle-tested**, **modular**, and **developer‑first** CLI tool that lets you interact with the **Binance Futures Testnet** using three core order types. Whether you're backtesting a strategy, learning how exchange APIs work, or building a quantitative research pipeline – this bot gives you a clean, auditable, and extensible foundation.
 
@@ -53,7 +53,7 @@ This is not just another trading script. It's a **battle-tested**, **modular**, 
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
 | Order Type        | Description                                                                 | CLI flag required          |
 |-------------------|-----------------------------------------------------------------------------|----------------------------|
@@ -63,7 +63,7 @@ This is not just another trading script. It's a **battle-tested**, **modular**, 
 
 **➕ Bonus:** Bidirectional `--side BUY` / `--side SELL` support – long or short, entry or exit.
 
-**🛡️ Multi‑stage validations:**
+** Multi‑stage validations:**
 - Symbol existence & format (e.g., `BTCUSDT`)
 - Side ∈ {BUY, SELL}
 - Quantity > 0 (float sanitised)
@@ -72,7 +72,7 @@ This is not just another trading script. It's a **battle-tested**, **modular**, 
 
 ---
 
-## 🧰 Tech Stack
+##  Tech Stack
 
 | Component          | Technology                                                                 |
 |--------------------|----------------------------------------------------------------------------|
@@ -85,7 +85,7 @@ This is not just another trading script. It's a **battle-tested**, **modular**, 
 
 ---
 
-## 🏛️ Project Architecture
+##  Project Architecture
 
 The bot follows a **strictly layered architecture** where each module has a single, well‑defined responsibility.
 
@@ -133,7 +133,7 @@ sequenceDiagram
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```bash
 trading_bot/
@@ -157,7 +157,7 @@ trading_bot/
 
 ---
 
-## ⚡ Prerequisites
+##  Prerequisites
 
 - **Python 3.8 – 3.12** (CPython recommended)
 - **Binance Futures Testnet account** → [Get API keys here](https://testnet.binancefuture.com)
@@ -165,7 +165,7 @@ trading_bot/
 
 ---
 
-## ⚙️ Setup & Configuration
+##  Setup & Configuration
 
 ```bash
 # 1. Navigate to the project root
@@ -184,11 +184,11 @@ cp .env.example .env
 nano .env   # Add your real testnet API key & secret
 ```
 
-> **🔐 Security note:** The client is **hardcoded with `testnet=True`** – even if you accidentally paste production keys, **no real funds will ever move**.
+> ** Security note:** The client is **hardcoded with `testnet=True`** – even if you accidentally paste production keys, **no real funds will ever move**.
 
 ---
 
-## 🖥️ Command Usage & Examples
+##  Command Usage & Examples
 
 ```bash
 # Display help
@@ -223,7 +223,7 @@ python cli.py --symbol SOLUSDT --side BUY --type STOP_MARKET --quantity 0.1 --st
 
 ---
 
-## 📝 Logging Deep Dive
+##  Logging Deep Dive
 
 The logging subsystem (`bot/logging_config.py`) is configured for **forensic traceability**:
 
@@ -243,7 +243,7 @@ You can `tail -f logs/trading.log` to monitor orders in real time.
 
 ---
 
-## 🧠 Design Decisions & Patterns
+##  Design Decisions & Patterns
 
 | Decision                          | Why                                                                 |
 |-----------------------------------|----------------------------------------------------------------------|
@@ -256,7 +256,7 @@ You can `tail -f logs/trading.log` to monitor orders in real time.
 
 ---
 
-## 🧠 Underlying Assumptions
+##  Underlying Assumptions
 
 - **Testnet mode is active** – you are trading simulated USDT. No real money involved.
 - Your testnet account has **sufficient margin** (mock USDT) and **leverage** configured manually via the Binance testnet web interface.
@@ -265,7 +265,7 @@ You can `tail -f logs/trading.log` to monitor orders in real time.
 
 ---
 
-## 🤓 Geek Corner
+##  Geek Corner
 
 ### Pure functions for validation
 ```python
@@ -300,7 +300,7 @@ logger = setup_logging(console_level=logging.INFO, file_level=logging.DEBUG)
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Found a bug? Want to add `TRAILING_STOP_MARKET`? Open an issue or PR.  
 **Please ensure**:
@@ -310,12 +310,12 @@ Found a bug? Want to add `TRAILING_STOP_MARKET`? Open an issue or PR.
 
 ---
 
-## 📄 License
+##  License
 
 MIT – use freely, but **not for live trading** unless you modify the testnet lock and accept full financial responsibility.
 
 ---
 
 <div align="center">
-  <sub>⚡ Built with caffeine, type hints, and a deep respect for idempotency. ⚡</sub>
+  <sub> Built with caffeine, type hints, and a deep respect for idempotency. ⚡</sub>
 </div>
